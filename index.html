@@ -110,9 +110,15 @@
       data-bs-ride="carousel"
       data-bs-interval="2500"
     >
-      <div class="carousel-indicators">
+      <div
+        class="carousel-indicators"
+        style="
+          background-color: rgb(120, 120, 120);
+          padding: 1mm;
+          border-radius: 0mm 0mm 1.5mm 1.5mm;
+        "
+      >
         <button
-          style="color: black"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="0"
@@ -121,14 +127,12 @@
           aria-label="Slide 1"
         ></button>
         <button
-          style="color: black"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
         <button
-          style="color: black"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="2"
@@ -170,13 +174,8 @@
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev"
       >
-        <span
-          class="carousel-control-prev-icon"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden"
-          >Previous</span
-        >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
       <button
         style="
@@ -190,13 +189,8 @@
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next"
       >
-        <span
-          class="carousel-control-next-icon"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden"
-          >Next</span
-        >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
       </button>
     </div>
   </body>
