@@ -21,6 +21,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./index.css">
     <!-- 引入JS文件 -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -39,12 +40,6 @@
     ></script>
   </head>
   <body>
-    <!-- 回顶按钮 -->
-    <button type="button" class="btn btn-outline-success">
-      <a href="#top">
-        <img src="https://i.postimg.cc/Jm7CbqkG/20227241506.png?dl=1" alt="">
-      </a>
-    </button>
     <!-- 导航栏 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white" id="top">
       <div class="container-fluid">
@@ -112,6 +107,23 @@
         </div>
       </div>
     </nav>
+    <!-- 侧边功能按钮 -->
+    <div class="btn-group-vertical" style="position: fixed;right: 0;bottom: 15%;">
+      <!-- 返回顶端 -->
+      <button type="button" class="btn btn-warning">
+        <a href="#top">
+          <img src="https://i.postimg.cc/Jm7CbqkG/20227241506.png?dl=1" alt="" style="height: 35px;">
+        </a>
+      </button>
+      <!-- 联系客服 -->
+      <button type="button" class="btn btn-warning">
+        <a href="#contact" class="contact-with-me">
+          <img src="https://i.postimg.cc/NQY2QSnd/2022724151413.png?dl=1" alt="" style="height: 35px;">
+          <div>
+            <img src="https://i.postimg.cc/Dnz09fQD/2022722235533.jpg?dl=1" alt="">
+          </div>
+        </a>
+    </div>
     <!-- 轮播图+推荐框 -->
     <div class="container-fluid">
       <div class="row">
