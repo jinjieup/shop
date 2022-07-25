@@ -89,6 +89,7 @@
               class="btn btn-outline-success"
               type="submit"
               style="width: 5rem"
+              onclick="alert('搜索功能暂未开放，敬请期待！')"
             >
               搜索
             </button>
@@ -96,7 +97,23 @@
         </div>
       </div>
     </nav>
-    <div class="container">
+    <!-- 侧边功能按钮 -->
+    <div class="btn-group-vertical" style="position: fixed;right: 0;bottom: 15%;z-index: 10000;">
+      <!-- 返回顶端 -->
+      <button type="button" class="btn btn-warning">
+        <a href="#top">
+          <img src="https://i.postimg.cc/Jm7CbqkG/20227241506.png?dl=1" alt="" style="height: 35px;">
+        </a>
+      </button>
+      <!-- 联系客服 -->
+      <button type="button" class="btn btn-warning">
+        <a href="./contact/contact.html" class="contact-with-me">
+          <img src="https://i.postimg.cc/NQY2QSnd/2022724151413.png?dl=1" alt="" style="height: 35px;">
+        </a>
+    </div>
+    <!-- 商品详情 -->
+    <!-- 标题卡 -->
+    <div class="container" style="margin-top: 15px;">
       <div class="card mb-3"">
         <div class="row g-0">
           <div class="col-md-4">
@@ -104,12 +121,25 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">测试商品</h5>
+              <h5 class="card-title" style="margin-top: 5rem;">测试商品</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h4 style="color: red;"><br>CNY 0.99</br></h4>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-primary" onclick="window.open('https://www.jinjieup.tk/shop/list/03cb42ce-0bc1-11ed-861d-0242ac120002/payment.html','_blank')">立即购买</button>
+                <button type="button" class="btn btn-outline-primary" onclick="window.open('http://www.jinjieup.tk/shop/contact/contact.html','_blank')">咨询客服</button>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- 详解标题 -->
+    <h3>商品介绍</h3>
+    <!-- 介绍卡 -->
+    <div class="card">
+      <img src="https://i.postimg.cc/0xQRm6Fk/2022723143140.png?dl=1" class="card-img-bottom" alt="...">
+      <div class="card-body">
+        <p class="card-text">这是一个测试的商品</p>
       </div>
     </div>
     <!-- 页尾 -->
