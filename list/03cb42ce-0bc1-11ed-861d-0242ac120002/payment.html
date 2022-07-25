@@ -45,42 +45,64 @@
     ></script>
   </head>
   <body>
-    <!-- toast提示框 -->
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <img src="https://i.postimg.cc/3Y0fwHJG/2022725113428.png?dl=1" class="rounded me-2" alt="..." />
-        <strong class="me-auto">成长小铺安全中心</strong>
-        <small>刚刚</small>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="toast"
-          aria-label="Close"
-        ></button>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://www.jinjieup.tk/shop">
+          <img
+            src="https://i.postimg.cc/GrKZPWsF/2022723152820.png?dl=1"
+            alt=""
+            height="35"
+            class="d-inline-block align-text-top"
+          />
+          成长知识铺
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- 导航Button -->
+          <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="http://www.jinjieup.tk/shop"
+                >首页</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#junior">实用初中资料</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#primary-resume">多彩小升初简历</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#course">低价课程出售</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">联系小主</a>
+            </li>
+          </ul>
+          <!-- 搜索框 -->
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="搜索"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+              style="width: 5rem"
+              onclick="alert('搜索功能暂未开放，敬请期待！')"
+            >
+              搜索
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="toast-body">
-        <br>
-          支付后请尽快联系客服！\n请将
-          <p style="color: red;">商品标题、支付单号</p>
-          告知客服人员，以便客服人员及时处理！
-        </br>
-      </div>
-    </div>
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <img src="https://i.postimg.cc/3Y0fwHJG/2022725113428.png?dl=1" class="rounded me-2" alt="...">
-        <strong class="me-auto">成长小铺安全中心</strong>
-        <small>刚刚</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-      <div class="toast-body">
-        <p style="color: red;">
-          客服人员发于您的链接将在发送之日起30日内有效，请您尽快下载备份于个人储存设备，若因个人原因导致链接失效，则需重新购买商品后再次获取有效链接！
-        </p>
-      </div>
-    </div>
+    </nav>
     <!-- 支付组件 -->
-    <div class="container">
+    <div class="container" style="margin-top: 10rem;">
       <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-4">
@@ -90,12 +112,10 @@
             <div class="card-body">
               <h5 class="card-title"><br>收付款：<p style="color: red;">CNY 0.99</p></br></h5>
               <p class="card-text">目前仅支持使用微信支付！请谅解！</p>
-              <p class="card-text">付款后请联系客服，并保存好个人付款单号</p>
-              <p class="card-text">请添加客服人员
-                <p style="color: red;">企业微信</p>
-                ，其余方式客服人员均不可发送资源链接！
-              </p>
-              <a href="http://www.jinjieup.tk/shop/contact/contact.html" class="btn btn-warning">联系客服</a>
+              <p class="card-text"><br>支付后请尽快联系客服！\n请将<p style="color: red;">商品标题、支付单号</p>告知客服人员，以便客服人员及时处理！</br></p>
+              <p class="card-text">请添加客服人员<p style="color: red;">企业微信</p>，其余方式客服人员均不可发送资源链接！</p>
+              <p class="card-text" style="color: red;">客服人员发于您的链接将在发送之日起30日内有效，请您尽快下载备份于个人储存设备，若因个人原因导致链接失效，则需重新购买商品后再次获取有效链接！</p>
+              <a href="http://www.jinjieup.tk/shop/contact/contact.html" class="btn btn-warning" style="margin-top: 2rem;">联系客服</a>
             </div>
           </div>
         </div>
